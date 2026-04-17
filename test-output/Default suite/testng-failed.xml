@@ -5,7 +5,10 @@
     <classes>
       <class name="AutomationTest.SubmitOrderTest">
         <methods>
-          <include name="submitOrder"/>
+          <include name="OrderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- AutomationTest.SubmitOrderTest -->
     </classes>

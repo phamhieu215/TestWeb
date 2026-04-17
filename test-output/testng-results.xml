@@ -1,60 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-15T19:04:42 GMT+07:00" name="Suite" finished-at="2026-04-15T19:04:53 GMT+07:00" duration-ms="10758">
+  <suite started-at="2026-04-16T16:24:39 GMT+07:00" name="Suite" finished-at="2026-04-16T16:24:57 GMT+07:00" duration-ms="18656">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValicationsTest.loginErrorValidation()[pri:0, instance:AutomationTest.ErrorValicationsTest@22fcf7ab]" name="loginErrorValidation" class="AutomationTest.ErrorValicationsTest"/>
-      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" name="submitOrder" class="AutomationTest.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2026-04-15T19:04:42 GMT+07:00" name="Submit Order Test" finished-at="2026-04-15T19:04:43 GMT+07:00" duration-ms="23">
-    </test> <!-- Submit Order Test -->
-    <test started-at="2026-04-15T19:04:42 GMT+07:00" name="Error Validations Test" finished-at="2026-04-15T19:04:53 GMT+07:00" duration-ms="10758">
-      <class name="AutomationTest.ErrorValicationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AutomationTest.ErrorValicationsTest@22fcf7ab]" started-at="2026-04-15T19:04:43 GMT+07:00" name="launchApplication" finished-at="2026-04-15T19:04:53 GMT+07:00" duration-ms="10400" status="PASS">
+    <test started-at="2026-04-16T16:24:39 GMT+07:00" name="Error Validations Test" finished-at="2026-04-16T16:24:39 GMT+07:00" duration-ms="17">
+    </test> <!-- Error Validations Test -->
+    <test started-at="2026-04-16T16:24:39 GMT+07:00" name="Submit Order Test" finished-at="2026-04-16T16:24:57 GMT+07:00" duration-ms="18656">
+      <class name="AutomationTest.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" started-at="2026-04-16T16:24:39 GMT+07:00" name="launchApplication" finished-at="2026-04-16T16:24:42 GMT+07:00" duration-ms="2851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginErrorValidation()[pri:0, instance:AutomationTest.ErrorValicationsTest@22fcf7ab]" started-at="2026-04-15T19:04:53 GMT+07:00" name="loginErrorValidation" finished-at="2026-04-15T19:04:53 GMT+07:00" duration-ms="19" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "AutomationTest.pageobjects.LandingPage.loginApplication(String, String)" because "this.landingPage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "AutomationTest.pageobjects.LandingPage.loginApplication(String, String)" because "this.landingPage" is null
-at AutomationTest.ErrorValicationsTest.loginErrorValidation(ErrorValicationsTest.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" started-at="2026-04-16T16:24:42 GMT+07:00" name="submitOrder" data-provider="getData" finished-at="2026-04-16T16:24:49 GMT+07:00" duration-ms="6700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Phamhieu@215, product=ZARA COAT 3, email=hieupham@gmail.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationTest.ErrorValicationsTest@22fcf7ab]" started-at="2026-04-15T19:04:53 GMT+07:00" name="tearDown" finished-at="2026-04-15T19:04:53 GMT+07:00" duration-ms="208" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" started-at="2026-04-16T16:24:49 GMT+07:00" name="tearDown" finished-at="2026-04-16T16:24:49 GMT+07:00" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AutomationTest.ErrorValicationsTest -->
-    </test> <!-- Error Validations Test -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" started-at="2026-04-16T16:24:49 GMT+07:00" name="launchApplication" finished-at="2026-04-16T16:24:53 GMT+07:00" duration-ms="3939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" started-at="2026-04-16T16:24:53 GMT+07:00" name="submitOrder" data-provider="getData" finished-at="2026-04-16T16:24:57 GMT+07:00" duration-ms="4452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Nguyenhieu@215, product=ZARA COAT 3, email=hieunguyen@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationTest.tests.SubmitOrderTest@44c03695]" started-at="2026-04-16T16:24:57 GMT+07:00" name="tearDown" finished-at="2026-04-16T16:24:57 GMT+07:00" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AutomationTest.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
   </suite> <!-- Suite -->
 </testng-results>

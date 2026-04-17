@@ -17,7 +17,7 @@ public class CheckoutPage extends AbstractComponent {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(css = ".action_submit")
+	@FindBy(css = ".action__submit")
 	WebElement submit; 
 	@FindBy(css = "[placeholder='Select Country']")
 	WebElement country; 
@@ -31,10 +31,6 @@ public class CheckoutPage extends AbstractComponent {
 		selectCountry.click();
 	}
 	public ConfirmationPage submitOrder() {
-		waitForElementToAppear(By.cssSelector(".actions a"));
-	    
-	  
-	   
 		submit.click();
 		return new ConfirmationPage(driver);
 	}

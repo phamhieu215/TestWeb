@@ -1,4 +1,4 @@
-package AutomationTest;
+package AutomationTest.tests;
 
 import java.time.Duration;
 import java.util.List;

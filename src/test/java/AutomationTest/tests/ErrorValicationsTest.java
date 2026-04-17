@@ -1,4 +1,4 @@
-package AutomationTest;
+package AutomationTest.tests;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
@@ -20,7 +20,7 @@ public class ErrorValicationsTest extends BaseTest {
 	{	
 		String productName ="ZARA COAT 3";
 	
-		ProductCatalogue productCatalogue = landingPage.loginApplication("hieupham@gmail.com","Phamhieu21@215");
+		ProductCatalogue productCatalogue = landingPage.loginApplication("rahulshetty@gmail.com", "Iamking@000");
 		AssertJUnit.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	
@@ -29,7 +29,7 @@ public class ErrorValicationsTest extends BaseTest {
 	{
 
 		String productName = "ZARA COAT 3";
-		ProductCatalogue productCatalogue = landingPage.loginApplication("hieupham@gmail.com","Phamhieu@215");
+		ProductCatalogue productCatalogue = landingPage.loginApplication("hieupham@gmail.com","Phamhieu21@215");
 		List<WebElement> products = productCatalogue.getProductsList();
 		productCatalogue.addProductToCart(productName);
 		CartPage cartPage = productCatalogue.goToCartPage();
