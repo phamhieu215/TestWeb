@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel = "tests" name="Suite">
+<listeners>
+<listener class-name="AutomationTest.TestComponents.Listeners"/>
+</listeners>
   <test thread-count="5" name="Submit Order Test">
     <classes>
-      <class name="AutomationTest.SubmitOrderTest"/>
+      <class name="AutomationTest.tests.SubmitOrderTest"/>
     </classes>
   </test> <!-- Test -->
   
   <test thread-count="5" name="Error Validations Test">
     <classes>
-      <class name="AutomationTest.ErrorValicationsTest"/>
+      <class name="AutomationTest.tests.ErrorValicationsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
