@@ -55,7 +55,7 @@ public class BaseTest {
 		else if(browserName.equalsIgnoreCase("edge"))
 		{
 			System.setProperty("webdriver.edge.deiver", "edge.exe");
-			WebDriver driver = new EdgeDriver();;
+			WebDriver driver = new EdgeDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
